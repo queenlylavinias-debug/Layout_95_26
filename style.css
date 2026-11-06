@@ -1,0 +1,227 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8fb;
+    color: #405b5b;
+    line-height: 1.7;
+}
+
+header {
+    background-color: #b9ded8;
+    color: #315d59;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+nav {
+    background-color: #78aaa3;
+    padding: 14px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffe0ed;
+}
+
+section {
+    padding: 40px 9%;
+}
+
+h2 {
+    color: #43877f;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+.intro {
+    background-color: #f8dce8;
+    text-align: center;
+}
+
+.intro img {
+    width: 65%;
+    max-width: 500px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-top: 20px;
+    border: 5px solid white;
+}
+
+#sejarah {
+    text-align: center;
+}
+
+.description {
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.gallery-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    padding: 10px;
+}
+
+.gallery-container::-webkit-scrollbar {
+    display: none;
+}
+
+.batik-item {
+    min-width: 220px;
+    background-color: #f8dce8;
+    padding: 15px;
+    border-radius: 14px;
+    text-align: center;
+}
+
+.batik-item img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.batik-item h3 {
+    color: #43877f;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #78aaa3;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: #568b83;
+}
+
+#proses {
+    background-color: #eaf5f2;
+}
+
+.process-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #f8dce8;
+    padding: 22px;
+    border-radius: 12px;
+    width: 220px;
+    text-align: center;
+}
+
+.card h3 {
+    color: #43877f;
+    margin-bottom: 10px;
+}
+
+.process-image {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.process-image img {
+    width: 70%;
+    max-width: 550px;
+    border-radius: 15px;
+    border: 5px solid white;
+}
+
+.identity {
+    text-align: center;
+}
+
+blockquote {
+    background-color: #dcefeb;
+    color: #39736d;
+    text-align: center;
+    padding: 30px;
+    margin: 20px 9%;
+    border-radius: 12px;
+    font-style: italic;
+}
+
+footer {
+    background-color: #78aaa3;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 27px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    section {
+        padding: 30px 5%;
+    }
+
+    .intro img,
+    .process-image img {
+        width: 100%;
+    }
+
+    .gallery {
+        gap: 5px;
+    }
+
+    .batik-item {
+        min-width: 190px;
+    }
+
+    .card {
+        width: 100%;
+    }
+}

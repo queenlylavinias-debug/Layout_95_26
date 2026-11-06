@@ -1,0 +1,117 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5f7;
+    color: #555;
+}
+
+.header {
+    background-image: url("photo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+    text-align: center;
+    padding: 80px 30px;
+}
+
+.topnav {
+    background-color: #78aaa5;
+    display: flex;
+    justify-content: center;
+}
+
+.topnav a {
+    color: white;
+    text-decoration: none;
+    padding: 16px 24px;
+    font-weight: bold;
+}
+
+.topnav a:hover {
+    background-color: #f4b8ca;
+}
+
+.bagian {
+    background-color: #fce5ec;
+    border: 5px solid #78aaa5;
+    padding: 15px;
+    margin: 15px;
+}
+
+.bagian h3 {
+    color: #9b6177;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.buah {
+    background-color: #dcebea;
+    border: 7px solid #78aaa5;
+    padding: 8px 30px;
+    margin-bottom: 15px;
+    list-style-type: upper-roman;
+}
+
+.buah li {
+    background-color: #f4b8ca;
+    padding: 7px;
+    margin: 3px 0;
+}
+
+.lorem {
+    background-color: #dcebea;
+    border: 7px solid #78aaa5;
+    padding: 8px 30px;
+    list-style-type: square;
+}
+
+.lorem li {
+    background-color: #fce5ec;
+    padding: 8px;
+    margin: 4px 0;
+}
+
+.icon-section {
+    margin-top: 0;
+}
+
+.icon-list {
+    background-color: #dcebea;
+    border: 7px solid #78aaa5;
+    padding: 8px 30px;
+    list-style-type: square;
+}
+
+.icon-list li {
+    background-color: #f4b8ca;
+    padding: 8px;
+    margin: 3px 0;
+}
+
+.icon-list i {
+    color: #579c97;
+    margin-right: 5px;
+}
+
+.buah li:hover,
+.lorem li:hover,
+.icon-list li:hover {
+    background-color: #dcebea;
+}
+
+.footer {
+    background-color: #78aaa5;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    line-height: 1.7;
+}

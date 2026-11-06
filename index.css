@@ -1,0 +1,243 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5f7;
+    color: #555;
+    line-height: 1.6;
+}
+
+.header {
+    background-image: url("photo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+    text-align: center;
+    padding: 58px 30px;
+}
+.header h1 {
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+.header p {
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+/* MENU NAVIGASI */
+.topnav {
+    background-color: #78aaa5;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.topnav a {
+    color: white;
+    text-decoration: none;
+    padding: 16px 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.topnav a:hover {
+    background-color: #f4b8ca;
+    color: white;
+}
+
+/* JUDUL */
+.judul {
+    text-align: center;
+    color: #c77f98;
+    padding: 30px 15px 20px;
+}
+
+.judul h1 {
+    font-size: 25px;
+}
+
+.judul h2 {
+    font-size: 23px;
+}
+
+/* BIODATA */
+.biodata {
+    width: 85%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 30px;
+    border: 1px solid #78aaa5;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(120, 170, 165, 0.15);
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.foto {
+    position: relative;
+    width: 170px;
+    height: 200px;
+    flex-shrink: 0;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #f4b8ca;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.4s ease;
+}
+
+.foto img:first-child {
+    opacity: 1;
+}
+
+.foto img:last-child {
+    opacity: 0;
+}
+
+.foto:hover img:first-child {
+    opacity: 0;
+}
+
+.foto:hover img:last-child {
+    opacity: 1;
+}
+
+/* ISI BIODATA */
+.isi h2 {
+    color: #78aaa5;
+    margin-bottom: 15px;
+    font-size: 23px;
+}
+
+.isi p {
+    margin-bottom: 9px;
+    font-size: 15px;
+}
+
+.isi b {
+    color: #c77f98;
+}
+
+/* MAKANAN, MINUMAN, WISATA */
+.Makanan,
+.Minuman,
+.Wisata {
+    width: 85%;
+    margin: 15px auto 30px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+/* KARTU */
+.Makanan div,
+.Minuman div,
+.Wisata div {
+    background-color: white;
+    border: 1px solid #78aaa5;
+    border-radius: 10px;
+    padding: 13px;
+    text-align: center;
+    width: 200px;
+    transition: 0.3s;
+    box-shadow: 0 3px 8px rgba(120, 170, 165, 0.12);
+}
+
+/* GAMBAR KARTU */
+.Makanan img,
+.Minuman img,
+.Wisata img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+/* NAMA KARTU */
+.Makanan p,
+.Minuman p,
+.Wisata p {
+    margin-top: 10px;
+    color: #c77f98;
+    font-weight: bold;
+}
+
+/* HOVER KARTU */
+.Makanan div:hover,
+.Minuman div:hover,
+.Wisata div:hover {
+    background-color: #dcebea;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 12px rgba(120, 170, 165, 0.25);
+}
+
+/* FOOTER */
+.footer {
+    background-color: #78aaa5;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 45px;
+    line-height: 1.8;
+}
+
+.footer p {
+    margin: 3px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+
+    .header h1 {
+        font-size: 21px;
+    }
+
+    .topnav a {
+        padding: 13px 15px;
+    }
+
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .biodata {
+        width: 90%;
+    }
+
+    .Makanan,
+    .Minuman,
+    .Wisata {
+        width: 90%;
+    }
+
+    .Makanan div,
+    .Minuman div,
+    .Wisata div {
+        width: 45%;
+    }
+}

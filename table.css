@@ -1,0 +1,118 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5f7;
+    color: #555;
+}
+
+.header {
+    background-image: url("photo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    color: white;
+    text-align: center;
+    padding: 80px 30px;
+}
+
+.topnav {
+    background-color: #78aaa5;
+    display: flex;
+    justify-content: center;
+}
+
+.topnav a {
+    color: white;
+    text-decoration: none;
+    padding: 16px 24px;
+    font-weight: bold;
+}
+
+.topnav a:hover {
+    background-color: #f4b8ca;
+}
+
+.judul {
+    text-align: center;
+    color: #c77f98;
+    padding: 30px;
+}
+
+.container {
+    width: 85%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #78aaa5;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tabel-gabungan {
+    width: 480px;
+    height: 330px;
+    margin: 25px auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 25px;
+}
+
+.tabel-gabungan td {
+    border: 4px solid #f4b8ca;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.tabel-gabungan .pink {
+    background-color: #f4b8ca;
+    color: white;
+}
+
+.tabel-gabungan .teal {
+    background-color: #78aaa5;
+    color: white;
+}
+
+.tabel-gabungan td:hover {
+    background-color: #fff5f7;
+    color: #579c97;
+    cursor: pointer;
+}
+
+th, td {
+    text-align: left;
+    padding: 12px;
+}
+
+th {
+    color: #579c97;
+}
+
+tr:nth-child(even) {
+    background-color: #fce5ec;
+}
+
+tr:hover {
+    background-color: #dcebea;
+}
+
+.footer {
+    background-color: #78aaa5;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 45px;
+    line-height: 1.7;
+}
